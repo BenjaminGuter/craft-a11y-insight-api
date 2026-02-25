@@ -2,6 +2,7 @@ import os
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from datetime import datetime
+from src.models import AuditRequest, AuditResponse, Issue
 
 
 load_dotenv()
@@ -33,3 +34,23 @@ async def health_check() -> dict:
         "environment": os.getenv("ENVIRONMENT", "development"),
         "timestamp": datetime.now().isoformat(),
     }
+
+@app.post("/audit")
+async def audit_endpoint(request: AuditRequest) -> AuditResponse:
+    """
+    Audit endpoint - scans URL for accessibility issues
+    (Dummy implementation for testing)
+    """
+    # Create dummy test issue
+    dummy_issue = Issue(
+        type="missing-alt-text",
+        description="Image missing alt attribute",
+        impact="serious",
+        element="img"
+    )
+    
+    return AuditResponse(
+        url=str(request.url),
+        score=75,
+        issues=[dummy_issue]
+    )
