@@ -2,16 +2,6 @@
 
 **Automated Accessibility Auditing as a Service**
 
-## Project Naming Convention
-
-This project follows a personal naming convention to distinguish development approaches:
-- `craft-*` repositories: Hand-crafted without AI code generation
-- `create-*` repositories: Built with AI assistance for rapid development
-
-This project is hand-crafted to ensure deep understanding of the underlying technologies.
-
----
-
 ## Overview
 
 A11y-Insight API is a REST API designed to automate accessibility auditing for modern web applications. With the European Accessibility Act (EAA) coming into force in June 2025, organizations need scalable solutions to ensure their digital products meet WCAG 2.1 Level AA compliance requirements.
