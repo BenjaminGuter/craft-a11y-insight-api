@@ -1,4 +1,4 @@
-# craft-a11y-insight-api
+# a11y-insight-api
 
 **Automated Accessibility Auditing as a Service**
 
