@@ -196,11 +196,3 @@ MIT License - see [LICENSE](LICENSE) file for details.
 For questions or feedback regarding this project, please open an issue on GitHub.
 
 ---
-
-**Project Timeline**
-
-- Week 1: Setup & Foundation
-- Week 2: Core functionality (Playwright + Axe-core integration)
-- Week 3: Docker & Error handling
-- Week 4: Documentation & polish
-- Week 5+: CI/CD & Cloud deployment
